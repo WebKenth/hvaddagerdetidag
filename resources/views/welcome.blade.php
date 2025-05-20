@@ -130,6 +130,7 @@
             right: 56%;
             z-index: 10;
             height: 50%;
+            width: auto;
         }
 
         /* Bottom section */
