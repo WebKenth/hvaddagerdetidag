@@ -9,7 +9,7 @@
     <!-- OpenGraph Tags -->
     <meta property="og:title" content="Hvad Dag Er Det Idag">
     <meta property="og:description" content="Find ud af hvilken speciel dag det er i dag. I dag er det Tommy's fødselsdag!">
-    <meta property="og:image" content="{{ url('/images/tommy2.jpg') }}">
+    <meta property="og:image" content="{{ url('/images/tommy.webp') }}">
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:type" content="website">
     
@@ -17,7 +17,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Hvad Dag Er Det Idag">
     <meta name="twitter:description" content="Find ud af hvilken speciel dag det er i dag. I dag er det Tommy's fødselsdag!">
-    <meta name="twitter:image" content="{{ url('/images/tommy2.jpg') }}">
+    <meta name="twitter:image" content="{{ url('/images/tommy.webp') }}">
     
     <!-- PWA Support -->
     <meta name="theme-color" content="#333333">
@@ -263,8 +263,8 @@
         <!-- Middle Section - Images -->
         <section class="middle-section">
             <div class="image-container">
-                <img src="/images/hat2.png" alt="Festhat" class="hat" width="300" height="200" loading="eager">
-                <img src="/images/tommy2.jpg" alt="Tommy" class="main-image" width="600" height="400" loading="eager">
+                <img src="/images/hat.webp" alt="Festhat" class="hat" width="300" height="200" loading="eager">
+                <img src="/images/tommy.webp" alt="Tommy" class="main-image" width="600" height="400" loading="eager">
             </div>
         </section>
 
