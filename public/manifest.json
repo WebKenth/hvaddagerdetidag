@@ -1,0 +1,16 @@
+{
+  "name": "Hvad Dag Er Det Idag",
+  "short_name": "HvadDag",
+  "description": "Find ud af hvilken speciel dag det er i dag",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8f8f8",
+  "theme_color": "#333333",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}

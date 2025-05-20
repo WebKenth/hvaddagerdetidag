@@ -4,12 +4,28 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Find ud af hvilken speciel dag det er i dag. I dag er det Tommy's fødselsdag!">
+    
+    <!-- OpenGraph Tags -->
+    <meta property="og:title" content="Hvad Dag Er Det Idag">
+    <meta property="og:description" content="Find ud af hvilken speciel dag det er i dag. I dag er det Tommy's fødselsdag!">
+    <meta property="og:image" content="{{ url('/images/tommy2.jpg') }}">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hvad Dag Er Det Idag">
+    <meta name="twitter:description" content="Find ud af hvilken speciel dag det er i dag. I dag er det Tommy's fødselsdag!">
+    <meta name="twitter:image" content="{{ url('/images/tommy2.jpg') }}">
+    
+    <!-- PWA Support -->
+    <meta name="theme-color" content="#333333">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
     <title>Hvad Dag Er Det Idag</title>
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600,700" rel="stylesheet" />
 
     <style>
         /* Reset and Base Styles */
@@ -20,7 +36,7 @@
         }
 
         body {
-            font-family: 'Instrument Sans', sans-serif;
+            font-family: sans-serif;
             line-height: 1.6;
             color: #333;
             background-color: #f8f8f8;
@@ -78,7 +94,8 @@
             margin-bottom: 0.5rem;
             z-index: 100;
             position: relative;
-            text-shadow: 7px 6px 4px black;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
         }
 
         /* Middle section */
@@ -125,13 +142,14 @@
         .bottom-section h2 {
             font-size: 1.5rem;
             font-weight: 600;
+            color: #222;
         }
 
         /* Footer */
         footer {
             padding: 2rem 1rem;
             text-align: center;
-            color: #666;
+            color: #444;
             font-size: 0.875rem;
         }
 
@@ -171,6 +189,14 @@
 
             header a:hover {
                 border-color: #f1f1f1;
+            }
+            
+            .bottom-section h2 {
+                color: #f1f1f1;
+            }
+            
+            footer {
+                color: #dddddd;
             }
         }
 
@@ -227,7 +253,7 @@
         @endif
     </header>
 
-    <div class="page-container">
+    <main class="page-container">
         <!-- Top Section - Title of the day -->
         <section class="top-section">
             <h1>Det er Tommy's Fødselsdag idag!</h1>
@@ -236,8 +262,8 @@
         <!-- Middle Section - Images -->
         <section class="middle-section">
             <div class="image-container">
-                <img src="/images/hat.png" alt="Festhat" class="hat">
-                <img src="/images/tommy.jpg" alt="Tommy" class="main-image">
+                <img src="/images/hat2.png" alt="Festhat" class="hat" width="300" height="200" loading="eager">
+                <img src="/images/tommy2.jpg" alt="Tommy" class="main-image" width="600" height="400" loading="eager">
             </div>
         </section>
 
@@ -245,7 +271,7 @@
         <section class="bottom-section">
             <h2>Tillykke med Fødselsdagen!</h2>
         </section>
-    </div>
+    </main>
 
     <footer>
         <p>Hvad Dag Er Det Idag - Dato: {{ date('d/m/Y') }}</p>
