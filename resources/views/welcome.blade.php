@@ -236,8 +236,8 @@
         <!-- Middle Section - Images -->
         <section class="middle-section">
             <div class="image-container">
-                <img src="/iimages/hat.png" alt="Festhat" class="hat">
-                <img src="/iimages/tommy.jpg" alt="Tommy" class="main-image">
+                <img src="/images/hat.png" alt="Festhat" class="hat">
+                <img src="/images/tommy.jpg" alt="Tommy" class="main-image">
             </div>
         </section>
 
