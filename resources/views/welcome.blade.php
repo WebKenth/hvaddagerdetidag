@@ -101,9 +101,8 @@
         /* Middle section */
         .middle-section {
             position: relative;
-            margin-bottom: 2rem;
             animation: slideIn 0.8s ease-out;
-            height: 500px;
+            height: 330px;
             display: flex;
             flex-direction: column;
             justify-content: center;
